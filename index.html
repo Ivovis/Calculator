@@ -16,19 +16,29 @@
       <input type="button" value="7" onclick="appendValue('7')" />
       <input type="button" value="8" onclick="appendValue('8')" />
       <input type="button" value="9" onclick="appendValue('9')" />
-      <input type="button" value="/" onclick="appendValue('/')" />
+      <input id="butDiv" type="button" value="/" onclick="selectDivision()" />
       <input type="button" value="4" onclick="appendValue('4')" />
       <input type="button" value="5" onclick="appendValue('5')" />
       <input type="button" value="6" onclick="appendValue('6')" />
-      <input type="button" value="*" onclick="appendValue('*')" />
+      <input
+        id="butMul"
+        type="button"
+        value="*"
+        onclick="selectMultiplication()"
+      />
       <input type="button" value="1" onclick="appendValue('1')" />
       <input type="button" value="2" onclick="appendValue('2')" />
       <input type="button" value="3" onclick="appendValue('3')" />
-      <input type="button" value="-" onclick="appendValue('-')" />
+      <input
+        id="butSub"
+        type="button"
+        value="-"
+        onclick="selectSubtraction()"
+      />
       <input type="button" value="0" onclick="appendValue('0')" />
       <input type="button" value="." onclick="appendValue('.')" />
-      <input type="button" value="=" onclick="executeResult()" />
-      <input type="button" value="+" onclick="appendValue('+')" />
+      <input type="button" value="=" onclick="calculateResult()" />
+      <input id="butAdd" type="button" value="+" onclick="selectAddition()" />
       <input type="button" value="C" onclick="clearOutput()" />
     </div>
   </body>

@@ -30,38 +30,47 @@ function appendValue(value) {
 
 function selectAddition() {
   // if we are the active state clear the state and border colors
-  // clear the border color of all the other buttons
-  // set out border color
-  // set the operationFlag to Addition
+
+  clearBorders();
+  document.getElementById("butAdd").style.borderColor = buttonBorderActive;
   operationFlag = 1;
 }
 
 function selectSubtraction() {
-  // if we are the active state clear the state and border colors
   // clear the border color of all the other buttons
-  // set out border color
-  // set the operationFlag to Subtraction
+
+  clearBorders();
+  document.getElementById("butSub").style.borderColor = buttonBorderActive;
   operationFlag = 2;
 }
 
 function selectMultiplication() {
-  // if we are the active state clear the state and border colors
-  // clear the border color of all the other buttons
-  // set out border color
-  // set the operationFlag to Multiplication
+  // if we are the active state clear the state and exit
+
+  clearBorders();
+  document.getElementById("butMul").style.borderColor = buttonBorderActive;
   operationFlag = 3;
 }
 
 function selectDivision() {
   // if we are the active state clear the state and border colors
-  // clear the border color of all the other buttons
-  // set out border color
-  // set the operationFlag to Division
+
+  clearBorders();
+  document.getElementById("butDiv").style.borderColor = buttonBorderActive;
   operationFlag = 4;
+}
+
+function clearBorders() {
+  // set all the borders to default colors
+  document.getElementById("butDiv").style.borderColor = buttonBorderNormal;
+  document.getElementById("butMul").style.borderColor = buttonBorderNormal;
+  document.getElementById("butAdd").style.borderColor = buttonBorderNormal;
+  document.getElementById("butSub").style.borderColor = buttonBorderNormal;
 }
 
 function clearOutput() {
   // clear the border color of the buttons
+  clearBorders();
   // clear the operation flag
   document.getElementById("output").value = "0";
 }
