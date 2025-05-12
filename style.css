@@ -37,7 +37,7 @@ input[type="button"] {
   width: 60px;
   height: 60px;
   /* TODO: fix the borderwidth */
-  background-color: blue;
+  background-color: rgb(22, 22, 141);
   border: 8 solid #33ff00;
   border-radius: 10px;
 
