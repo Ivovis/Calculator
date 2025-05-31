@@ -82,3 +82,5 @@ function executeResult() {
 
   document.getElementById("output").value = result;
 }
+
+// what was I thinking!
